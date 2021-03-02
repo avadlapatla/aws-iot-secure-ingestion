@@ -1,4 +1,4 @@
-Use IOT Credential helper to ingest data into Kinesis and leverage Kinesis Data Analytics for Apache Flink to consume & partition the data in S3. Create athena dynamic paritioning to query the data from S3 parititons.
+This repo has instructions on how to use IOT Credential helper to provision temporary credentials and then use those credentials to ingest data into Kinesis and use Kinesis Data Analytics for Apache Flink to consume & partition the data and store it in S3. The Athena dynamic parition instructions provides an example to create dynamic parition,
 
 Replace the below,
 
