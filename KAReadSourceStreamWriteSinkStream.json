@@ -1,0 +1,28 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "S3",
+            "Effect": "Allow",
+            "Action": [
+                "s3:GetObject",
+                "s3:GetObjectVersion"
+            ],
+            "Resource": ["arn:aws:s3:::S3BUCKETAPP",
+                "arn:aws:s3:::S3BUCKETAPP/*"
+            ]
+        },
+        {
+            "Sid": "ReadInputStream",
+            "Effect": "Allow",
+            "Action": "kinesis:*",
+            "Resource": "arn:aws:kinesis:us-west-2:ACCOUNTNO:stream/ExampleInputStream"
+        },
+        {
+            "Sid": "WriteDeliveryStream",
+            "Effect": "Allow",
+            "Action": "firehose:*",
+            "Resource": "arn:aws:firehose:us-west-2:ACCOUNTNO:deliverystream/ExampleDeliveryStream"
+        }
+    ]
+}
