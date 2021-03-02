@@ -5,7 +5,7 @@ Replace the below,
 ACCOUTNO with AWS Account Number
 S3BUCKET with S3 bucket for data
 S3BUCKETAPP with Kinesis Flink code bucket
-
+IOTURL with IOT Url from AWS IOT Console
 
 aws iot create-thing-type --thing-type-name kvs_athena > iot-thing-type.json
 
